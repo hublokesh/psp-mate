@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSP Mate - Find Your Travel Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <style>
+        /* General page styling */
+        body {
+            font-family: 'Roboto', sans-serif; /* Changed font */
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+        }
+
+        /* Introduction section with a bold theme */
+        .intro {
+            background-color: #fbc02d; /* Yellow */
+            color: #000;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #d32f2f; /* Red border */
+        }
+        .intro h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .intro p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Inquiry section */
+        .inquiry {
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2em;
+            background-color: #d32f2f; /* Dark red */
+            color: #fff;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Search/Match Form */
+        .search-form {
+            padding: 30px;
+            text-align: center;
+            background-color: #ff5722; /* Orange */
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .search-form h2 {
+            color: #fbc02d; /* Yellow */
+            font-size: 2em;
+        }
+        .search-form input[type="text"],
+        .search-form input[type="date"] {
+            padding: 12px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #d32f2f; /* Red border */
+            width: 220px;
+        }
+        .search-form button {
+            padding: 12px 25px;
+            background-color: #d32f2f; /* Red */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .search-form button:hover {
+            background-color: #b71c1c; /* Darker red */
+        }
+
+        /* Travel Feed */
+        .travel-feed {
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #212121; /* Dark background for travel feed */
+            border-radius: 10px;
+        }
+        .travel-feed h2 {
+            text-align: center;
+            color: #fbc02d; /* Yellow */
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .travel-item {
+            background-color: #ff5722; /* Orange */
+            border: 1px solid #d32f2f; /* Red border */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .travel-item h3 {
+            margin: 0;
+            color: #fff; /* White text */
+        }
+        .travel-item p {
+            margin: 5px 0;
+            color: #fff; /* White text */
+        }
+        .contact-button {
+            padding: 10px 20px;
+            background-color: #d32f2f; /* Dark red */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .contact-button:hover {
+            background-color: #b71c1c; /* Darker red */
+        }
+
+        /* Image section */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container p {
+            font-size: 1.5em;
+            color: #ff5722; /* Orange */
+            margin: 20px 0;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: #d32f2f; /* Dark red */
+        }
+        .testimonials h2 {
+            text-align: center;
+            color: #fff; /* White text */
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            font-style: italic;
+            margin: 10px 0;
+            color: #fff; /* White text */
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #d32f2f; /* Dark red */
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Introduction Section -->
+    <div class="intro">
+        <h1>Welcome to PSP Mate!</h1>
+        <p>Your adventure starts here! Connect with fellow travelers heading to the same destination and make unforgettable memories together.</p>
+    </div>
+
+    <!-- Inquiry Section -->
+    <div class="inquiry">
+        <p>Got questions? Reach out to us at: <a href="mailto:pallokendra16@gmail.com" style="color: #fff;">pallokendra16@gmail.com</a></p>
+        <p>Or call us at: <strong>9456110402</strong></p>
+    </div>
+
+    <!-- Text Section -->
+    <div class="image-container">
+        <p>Explore the beauty of Devbhoomi!</p>
+    </div>
+
+    <!-- Search/Match Form -->
+    <div class="search-form">
+        <h2>Find Your Perfect Travel Buddy</h2>
+        <form>
+            <input type="text" placeholder="Where are you headed?" required>
+            <input type="date" placeholder="When are you traveling?" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Travel Feed Section -->
+    <div class="travel-feed">
+        <h2>Upcoming Travel Plans in Uttarakhand</h2>
+        
+        <div class="travel-item">
+            <div>
+                <h3>Destination: Nainital</h3>
+                <p>Date: Dec 5, 2024</p>
+            </div>
+            <button class="contact-button">Contact</button>
+        </div>
+
+        <div class="travel-item">
+            <div>
+                <h3>Destination: Mussoorie</h3>
+                <p>Date: Dec 12, 2024</p>
+            </div>
+            <button class="contact-button">Contact</button>
+        </div>
+
+        <div class="travel-item">
+            <div>
+                <h3>Destination: Rishikesh</h3>
+                <p>Date: Dec 15, 2024</p>
+            </div>
+            <button class="contact-button">Contact</button>
+        </div>
+
+        <div class="travel-item">
+            <div>
+                <h3>Destination: Dehradun</h3>
+                <p>Date: Jan 10, 2025</p>
+            </div>
+            <button class="contact-button">Contact</button>
+        </div>
+
+        <div class="travel-item">
+            <div>
+                <h3>Destination: Auli</h3>
+                <p>Date: Jan 20, 2025</p>
+            </div>
+            <button class="contact-button">Contact</button>
+        </div>
+
+        <div class="travel-item">
+            <div>
+                <h3>Destination: Kedarnath</h3>
+                <p>Date: Feb 5, 2025</p>
+            </div>
+            <button class="contact-button">Contact</button>
+        </div>
+
+        <div class="travel-item">
+            <div>
+                <h3>Destination: Haridwar</h3>
+                <p>Date: Feb 12, 2025</p>
+            </div>
+            <button class="contact-button">Contact</button>
+        </div>
+
+        <div class="travel-item">
+            <div>
+                <h3>Destination: Badrinath</h3>
+                <p>Date: Feb 20, 2025</p>
+            </div>
+            <button class="contact-button">Contact</button>
+        </div>
+
+        <script>
+            // Function to handle form submission
+            function handleFormSubmit(event) {
+                event.preventDefault(); // Prevent the default form submission
+        
+                // Get the input values
+                const destination = document.querySelector('input[type="text"]').value;
+                const travelDate = document.querySelector('input[type="date"]').value;
+        
+                // Display the results (In a real application, you would send this to a server)
+                alert(`Searching for travel partners to ${destination} on ${travelDate}`);
+            }
+        
+            // Add event listener to the form
+            document.addEventListener('DOMContentLoaded', function () {
+                const form = document.querySelector('.search-form form');
+                form.addEventListener('submit', handleFormSubmit);
+            });
+        </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSP Mate - Find Your Travel Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <style>
+        /* (Your existing CSS here) */
+    </style>
+</head>
+<body>
+
+    <!-- Your existing HTML here -->
+
+    <!-- Search/Match Form -->
+    <div class="search-form">
+        <h2>Find Your Perfect Travel Buddy</h2>
+        <form>
+            <input type="text" placeholder="Where are you headed?" required>
+            <input type="date" placeholder="When are you traveling?" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- (Your existing HTML here) -->
+
+    <script>
+        // Function to handle form submission
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get the input values
+            const destination = document.querySelector('input[type="text"]').value;
+            const travelDate = document.querySelector('input[type="date"]').value;
+
+            // Display the results (In a real application, you would send this to a server)
+            alert(`Searching for travel partners to ${destination} on ${travelDate}`);
+        }
+
+        // Add event listener to the form
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('.search-form form');
+            form.addEventListener('submit', handleFormSubmit);
+        });
+    </script>
+
+</body>
+</html>
+        
